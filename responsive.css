@@ -1,0 +1,45 @@
+/* responsive mbile */
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 100%;
+        grid-template-columns:  1fr; 
+    }
+}
+    
+
+/* tablet */
+@media screen and (max-width:1200px) {
+    .container {
+        width: 94%;
+        grid-template-columns: 7rem auto 14rem;
+    }
+
+    aside .logo h2 {
+        display: none;
+    }
+
+    aside .sideBar h3 {
+        display: none;
+    }
+    aside .sideBar a{
+        width: 5rem;
+    }
+
+    aside .sideBar a:last-child {
+        position: relative;
+        margin-top: 1.8rem;
+    }
+
+    main .insights {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    main .recent-order{
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 .8rem;
+    } 
+}
